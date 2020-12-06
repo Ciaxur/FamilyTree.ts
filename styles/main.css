@@ -1,0 +1,79 @@
+h1{
+    color: orange;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+/* TOP BAR & BUTTONS */
+.top-bar{
+    height: 18px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    
+    user-select: none;
+    -webkit-app-region: drag;
+    
+    background-color: rgba(0,123,255,.25);
+    border-radius: 0px 0px 10px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.top-bar-btns{
+    margin-top: 3px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.bar-btn{
+    height: 10px;
+    margin-left: 2px;
+    -webkit-app-region: no-drag;
+}
+
+#btn-close{
+    opacity: 0.8;
+}
+
+#btn-close:active{
+    opacity: 0.6 !important;
+}
+
+#btn-close:hover{
+    opacity: 1;
+}
+
+#btn-min:active{
+    opacity: 0.8;
+}
+
+#btn-min:hover{
+    filter: brightness(1.3);
+}
+
+.top-bar-title{
+    position: inherit;
+    margin-left: 40%;
+    margin-bottom: 2px;
+    bottom: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+
+
+.debug{
+    background-color: blue;
+}
+
+
+/* CANVAS STYLES */
+#canvas{
+    background-color: #3D4252;
+}

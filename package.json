@@ -1,0 +1,30 @@
+{
+    "name": "familytree",
+    "version": "0.0.1",
+    "description": "Cool family tree app that allows you to track the family tree by linking them up to each other by dragging. Each member has their own descriptions.",
+    "main": "app.js",
+    "scripts": {
+        "start": "electron ./out/core/app.js",
+        "watch": "gulp watch:typescript",
+        "clean": "gulp clean:all",
+        "clean-out": "gulp clean:out",
+        "clean-dist": "gulp clean:dist",
+        "build": "gulp build:typescript",
+        "prod": "npm run clean && npm run build && npm start"
+    },
+    "author": "Omar Omar",
+    "license": "ISC",
+    "devDependencies": {
+        "del": "^3.0.0",
+        "electron": "^2.0.2",
+        "gulp": "^3.9.1",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-typescript": "^5.0.0-alpha.3",
+        "gulp-util": "^3.0.8",
+        "vinyl-buffer": "^1.0.1"
+    },
+    "dependencies": {
+        "jquery": "^3.3.1",
+        "typescript": "^2.9.2"
+    }
+}

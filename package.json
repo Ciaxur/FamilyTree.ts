@@ -3,6 +3,8 @@
     "version": "0.0.1",
     "description": "Cool family tree app that allows you to track the family tree by linking them up to each other by dragging. Each member has their own descriptions.",
     "main": "app.js",
+    "author": "Omar Omar",
+    "license": "MIT",
     "scripts": {
         "start": "electron ./out/core/app.js",
         "watch": "gulp watch:typescript",
@@ -12,8 +14,10 @@
         "build": "gulp build:typescript",
         "prod": "npm run clean && npm run build && npm start"
     },
-    "author": "Omar Omar",
-    "license": "ISC",
+    "dependencies": {
+        "jquery": "^3.3.1",
+        "typescript": "^2.9.2"
+    },
     "devDependencies": {
         "del": "^3.0.0",
         "electron": "^2.0.2",
@@ -23,8 +27,8 @@
         "gulp-util": "^3.0.8",
         "vinyl-buffer": "^1.0.1"
     },
-    "dependencies": {
-        "jquery": "^3.3.1",
-        "typescript": "^2.9.2"
+    "engines": {
+        "node": ">=10.0.0",
+        "npm": ">=6.0.0"
     }
 }
